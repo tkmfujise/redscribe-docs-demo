@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh6vnbcbrxu83"]
+
+[ext_resource type="Texture2D" uid="uid://c1er5mel8yr37" path="res://assets/Speakers.png" id="1_qelur"]
+[ext_resource type="Script" uid="uid://dnpyjf3ud171h" path="res://src/08.dialogue_controller/speaker/speaker.gd" id="2_qelur"]
+
+[node name="Speaker" type="Sprite2D"]
+texture = ExtResource("1_qelur")
+offset = Vector2(128, 128)
+hframes = 2
+vframes = 2
+script = ExtResource("2_qelur")

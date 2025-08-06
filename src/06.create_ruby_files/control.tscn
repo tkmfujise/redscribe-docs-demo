@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlpe52fe62u04"]
+
+[ext_resource type="Script" uid="uid://cxiu2mbmbbris" path="res://src/06.create_ruby_files/control.gd" id="1_md5nf"]
+
+[sub_resource type="ReDScribe" id="ReDScribe_md5nf"]
+boot_file = "uid://omcuxdx48ob4"
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_md5nf")
+res = SubResource("ReDScribe_md5nf")
