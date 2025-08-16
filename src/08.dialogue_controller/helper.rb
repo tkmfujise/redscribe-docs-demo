@@ -26,8 +26,12 @@ class Dialogue
     Dialogue.current = self
   end
 
-  def continue(val = true)
+  def continue(val = nil)
     fiber.resume(val)
+  end
+
+  def listen!
+    self.last_value = Fiber.yield
   end
 
   def ___?
@@ -88,7 +92,7 @@ class Speaker
 
     def communicate(key, str, choices = {})
       emit key, { content: str, choices: choices }
-      Dialogue.current.last_value = Fiber.yield
+      Dialogue.current.listen!
     end
 end
 delegate Speaker, :says, :asks, :with, :got #

@@ -29,9 +29,14 @@ Dialogue.new do
   Alice;
     says "He went in here."
     asks "Should I go in too?"
-    until ___?
-      says "But I just can't stop wondering."
-      asks "Maybe I should go in after all?"
+    if ___?
+      says "Alright, here goes!"
+    else
+      says "It looks so narrow and grimy... I really shouldn't."
+      begin
+        says "But I just can't stop wondering."
+        asks "Maybe I should go in after all?"
+      end until ___?
     end
 
   Narrator;

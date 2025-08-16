@@ -27,7 +27,7 @@ func set_face(face: String) -> void:
 		_: %Speaker.face = Speaker.Face.DEFAULT
 
 
-func set_choices(choices: Dictionary = { 'Continue': true }) -> void:
+func set_choices(choices: Dictionary = { 'Continue': null }) -> void:
 	for child in %Buttons.get_children(): child.queue_free()
 	for key in choices: add_choice(key, choices[key])
 
