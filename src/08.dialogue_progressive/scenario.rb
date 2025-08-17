@@ -1,4 +1,4 @@
-require 'src/08.dialogue_controller/helper'
+require 'src/08.dialogue_progressive/helper'
 Dialogue.new do
   speakers %w(Narrator WhiteRabbit Alice)
 
@@ -25,15 +25,14 @@ Dialogue.new do
   Alice;
   - "He went in here."
   ! "Should I go in too?"
-  if ___?
-    - "Alright, here goes!"
-  else
+  unless ___?
     - "It looks so narrow and grimy... I really shouldn't."
-    begin
+    until ___?
       - "But I just can't stop wondering."
       ! "Maybe I should go in after all?"
-    end until ___?
+    end
   end
+  - "Alright, here goes!"
 
   Narrator;
   - "As Alice entered the burrow, the ground gave way and she fell down."

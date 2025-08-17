@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://3o318bvur0if"]
 
-[ext_resource type="Script" uid="uid://cqj6dqbqtvako" path="res://src/08.dialogue_controller/dialogue.gd" id="1_pf4qo"]
-[ext_resource type="PackedScene" uid="uid://dh6vnbcbrxu83" path="res://src/08.dialogue_controller/speaker/speaker.tscn" id="2_yb1g8"]
+[ext_resource type="Script" uid="uid://cqj6dqbqtvako" path="res://src/08.dialogue_progressive/dialogue.gd" id="1_pf4qo"]
+[ext_resource type="PackedScene" uid="uid://dh6vnbcbrxu83" path="res://src/08.dialogue_progressive/speaker/speaker.tscn" id="2_yb1g8"]
 
 [sub_resource type="Theme" id="Theme_pf4qo"]
 RichTextLabel/font_sizes/normal_font_size = 32
@@ -47,7 +47,8 @@ offset_left = 219.0
 offset_top = 57.0
 offset_right = 1005.0
 offset_bottom = 197.0
-text = "this is test"
+text = "(Someone)
+This is test."
 
 [node name="Buttons" type="HBoxContainer" parent="."]
 unique_name_in_owner = true
