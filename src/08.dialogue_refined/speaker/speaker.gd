@@ -2,7 +2,7 @@ extends Sprite2D
 class_name Speaker
 
 enum Name { Alice, WhiteRabbit }
-enum Face { DEFAULT, FLUSTERD }
+enum Face { DEFAULT, FLUSTERED }
 
 @export var speaker_name : Name : set = set_speaker
 @export var face : Face : set = set_face

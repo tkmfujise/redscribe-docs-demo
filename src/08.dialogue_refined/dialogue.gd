@@ -23,7 +23,7 @@ func set_speaker(speaker: String) -> void:
 
 func set_face(face: String) -> void:
 	match face:
-		'flustered': %Speaker.face = Speaker.Face.FLUSTERD
+		'flustered': %Speaker.face = Speaker.Face.FLUSTERED
 		_: %Speaker.face = Speaker.Face.DEFAULT
 
 

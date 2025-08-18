@@ -1,4 +1,4 @@
-require 'src/08.dialogue_progressi/helper'
+require 'src/08.dialogue_refined/helper'
 Dialogue.new do
   speakers %w(Narrator WhiteRabbit Alice)
 
