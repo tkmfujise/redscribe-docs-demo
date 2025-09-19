@@ -10,9 +10,9 @@ enum Face { DEFAULT, FLUSTERED }
 
 func set_speaker(val: int) -> void:
 	frame_coords.y = val
-	speaker_name = val
+	speaker_name = val as Name
 
 
 func set_face(val: int) -> void:
 	frame_coords.x = val
-	face = val
+	face = val as Face

@@ -32,10 +32,10 @@ func set_choices(choices: Dictionary = { 'Continue': null }) -> void:
 	for key in choices: add_choice(key, choices[key])
 
 
-func add_choice(str: String, value: Variant) -> void:
+func add_choice(txt: String, value: Variant) -> void:
 	var btn = %ButtonTemplate.duplicate()
 	%Buttons.add_child(btn)
-	btn.text = str
+	btn.text = txt
 	btn.pressed.connect(continue_dialogue.bind(value))
 	btn.show()
 
