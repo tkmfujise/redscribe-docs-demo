@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ReDScribeEditorSyntax" load_steps=2 format=3 uid="uid://bgane4ws868g8"]
+[gd_resource type="Resource" script_class="ReDScribeEditorSyntax" format=3 uid="uid://bgane4ws868g8"]
 
 [ext_resource type="Script" uid="uid://c6crsqt7405r" path="res://addons/redscribe/resources/redscribe_editor_syntax.gd" id="1_rv58v"]
 
